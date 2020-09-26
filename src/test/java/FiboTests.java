@@ -20,4 +20,11 @@ public class FiboTests {
         assertEquals(13, fibo.calculate());
     }
 
+    @DisplayName("Fibonacci de 0 debe dar 0")
+    @Test
+    void Fibonacci_De_0_Should_Be_0() {
+        Fibo fibo = new Fibo(0);
+        assertEquals(0, fibo.calculate());
+    }
+
 }
