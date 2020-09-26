@@ -1,3 +1,0 @@
-Fibo.iml
-.idea/
-target/
