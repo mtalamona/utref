@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args){
@@ -19,7 +17,7 @@ public class Main {
             String serieFibonacci = fibo.calculate();
             System.out.println("Fibo<" + serieArgument + ">: " + serieFibonacci);
         } catch (Exception e) {
-            System.out.println("El número ingresado es inválido. Verificar que no sea menor que cero.");
+            System.out.println("x El número ingresado es inválido. Verificar que no sea menor que cero.");
         }
 
     }
