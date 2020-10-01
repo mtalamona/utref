@@ -19,7 +19,7 @@ public class Fibo {
     }
 
     // Calcula la serie
-    public String calculate() {
+    public ArrayList<Integer> calculate() {
 
         int sum = 0;
 
@@ -35,7 +35,9 @@ public class Fibo {
             numbers.add(sum);
         }
 
-        return numbersToString(numbers);
+        
+        return numbers;
+        //return numbersToString(numbers);
     }
 
     // Dado un ArrayList, retorna los valores sin los corchetes
