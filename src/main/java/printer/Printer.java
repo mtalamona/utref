@@ -1,3 +1,5 @@
+package printer;
+
 import java.util.ArrayList;
 
 public interface Printer {

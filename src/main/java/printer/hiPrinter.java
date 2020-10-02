@@ -1,10 +1,16 @@
-import java.util.ArrayList;
+package printer;
 
-public class hdPrinter implements Printer {
+import printer.Printer;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class hiPrinter implements Printer {
 
 	public void print(ArrayList<Integer> serie, int serieNumber) {
-		System.out.println("hdPrinter");
-		
+
+		// Invert order
+		Collections.sort(serie, Collections.reverseOrder());
 		
 		// Remove brackets
         StringBuffer strbuffer = new StringBuffer();
@@ -16,5 +22,5 @@ public class hdPrinter implements Printer {
         System.out.println("fibo<" + serieNumber + ">: " + strbuffer.toString());
 
 	}
-
+		
 }
