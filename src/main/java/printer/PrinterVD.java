@@ -4,10 +4,9 @@ import printer.Printer;
 
 import java.util.ArrayList;
 
-public class vdPrinter implements Printer {
+public class PrinterVD implements Printer {
 
 	public void print(ArrayList<Integer> serie, int serieNumber) {
-		System.out.println("printer.vdPrinter");
 
 		// Print serie title
 		System.out.println("fibo<" + serieNumber + ">: " );

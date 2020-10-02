@@ -1,3 +1,5 @@
+package unit;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -27,7 +29,7 @@ public class PrinterTests {
         serie.add(3);
     }
 
-    @DisplayName("Fibonacci de 5 - Impresion: hi (horizontal invertido)")
+    @DisplayName("Impresion: hi (horizontal invertido)")
     @Test
     void Fibonacci_Of_5_PrintMode_hi_Should_Print_Horizontal_Reversed() {
 
@@ -43,7 +45,7 @@ public class PrinterTests {
 
     }
 
-    @DisplayName("Fibonacci de 5 - Impresion: hi (horizontal invertido)")
+    @DisplayName("Impresion: hd (horizontal directa)")
     @Test
     void Fibonacci_Of_5_PrintMode_hd_Should_Print_Horizontal_Direct() {
 
@@ -56,6 +58,38 @@ public class PrinterTests {
 
         // Then
         assertEquals("fibo<5>: 0 1 2 3", outputStreamCaptor.toString().trim());
+
+    }
+
+    @DisplayName("Impresion: vd (vertical directa)")
+    @Test
+    void Fibonacci_Of_5_PrintMode_vd_Should_Print_Vertical_Direct() {
+
+        // Given PrintMode: hi
+        PrinterFactory printerFactory = new PrinterFactory();
+        Printer printer = printerFactory.create("vd");
+
+        // When Print Serie
+        printer.print(serie, 5);
+
+        // Then
+        assertEquals("fibo<5>: \n0\n1\n2\n3", outputStreamCaptor.toString().trim());
+
+    }
+
+    @DisplayName("Impresion: vi (vertical invertido)")
+    @Test
+    void Fibonacci_Of_5_PrintMode_vd_Should_Print_Vertical_Reverse() {
+
+        // Given PrintMode: hi
+        PrinterFactory printerFactory = new PrinterFactory();
+        Printer printer = printerFactory.create("vi");
+
+        // When Print Serie
+        printer.print(serie, 5);
+
+        // Then
+        assertEquals("fibo<5>: \n3\n2\n1\n0", outputStreamCaptor.toString().trim());
 
     }
 

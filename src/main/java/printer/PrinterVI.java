@@ -5,11 +5,10 @@ import printer.Printer;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class viPrinter implements Printer {
+public class PrinterVI implements Printer {
 
 	public void print(ArrayList<Integer> serie, int serieNumber) {
-		System.out.println("printer.viPrinter");
-		
+
 		// Invert order
 		Collections.sort(serie, Collections.reverseOrder());
 		

@@ -8,13 +8,13 @@ public class PrinterFactory {
 	public Printer create(String printerType) {
 		
 		if (printerType.equals("hd")) {
-			return new hdPrinter();
+			return new PrinterHD();
 		} else if (printerType.equals("hi")) {
-			return new hiPrinter();
+			return new PrinterHI();
 		} else if (printerType.equals("vd")) {
-			return new vdPrinter();
+			return new PrinterVD();
 		} else if (printerType.equals("vi")) {
-			return new viPrinter();
+			return new PrinterVI();
 		} else {
 			// TODO Remove System.exit(1);
 			System.exit(1);
