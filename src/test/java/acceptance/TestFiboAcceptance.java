@@ -28,7 +28,7 @@ public class TestFiboAcceptance {
     private final String serieOutputStringHI = "fibo<5>: 3 2 1 0";
     private final String serieOutputStringVD = "fibo<5>: \n0\n1\n2\n3";
     private final String serieOutputStringVI = "fibo<5>: \n3\n2\n1\n0";
-    private final String errorMessageExpected = "Opciones no validasx<.";
+    private final String errorMessageExpected = "Opciones no validas.";
 
     @BeforeEach
     public void setUp() {
