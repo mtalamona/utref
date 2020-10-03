@@ -1,8 +1,8 @@
 # Utref - Diseño y Arquitectura
 
 ## Descripcion
-#El proposito de la aplicación es calcular la serie fibonacci a partir de un número que provee el usuario.
-#La aplicación se ejecuta por linea de comando
+###El proposito de la aplicación es calcular la serie fibonacci a partir de un número que provee el usuario.
+###La aplicación se ejecuta por linea de comando
 
 ## Pre Requisitos
 #Tener instalado el runtime de Java
