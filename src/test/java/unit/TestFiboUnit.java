@@ -1,9 +1,12 @@
+package unit;
+
+import model.Fibo;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FiboTests {
+public class TestFiboUnit {
 
     @DisplayName("Fibonacci de 5 debe dar 3")
     @Test

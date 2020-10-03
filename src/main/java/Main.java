@@ -1,4 +1,5 @@
-import helper.Argument;
+import model.Argument;
+import model.Fibo;
 import printer.Printer;
 import printer.PrinterFactory;
 
