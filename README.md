@@ -10,4 +10,10 @@ Tener instalado el runtime de Java
 ## Como ejecutar la aplicación
 1. Descargar el proyecto o el archivo "fibo.jar"
 2. Abrir una ventana de comando en la ubicación del archivo fibo.jar
-3. Ejecutar el siguiente comando java -jar fibo 8 (8 representa el número sobre el cual se calculará la serie. Debe ser un número (no letras), el que desee. Debe ser mayor o igual que cero.)
+3. Ejecutar el siguiente comando java -jar fibo <print-mode> <serie-number> (ej. java -jar -o=vd 8)
+<print-mode> inidica los posibles formatos de impresión (vd, vi, hd, hi)
+<serie-number> es el número sobre el cual se calculará la serie de Fibonacci
+
+
+## Integración Continua
+Se configuró Github Actions. Con cada push a Master se hace un build, se corren los tests (unitarios y de aceptación) y se hace un control estátido de código contra Sonar Cloud.
