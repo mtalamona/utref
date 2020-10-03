@@ -10,7 +10,7 @@ Tener instalado el runtime de Java
 ## Como ejecutar la aplicación
 1. Descargar el proyecto o el archivo "fibo.jar"
 2. Abrir una ventana de comando en la ubicación del archivo fibo.jar
-3. Ejecutar el siguiente comando java -jar fibo <print-mode> <serie-number> (ej. java -jar -o=vd 8)
+3. Ejecutar el siguiente comando java -jar fibo <<print-mode>> <<serie-number>> (ej. java -jar -o=vd 8)
 <print-mode> inidica los posibles formatos de impresión (vd, vi, hd, hi)
 <serie-number> es el número sobre el cual se calculará la serie de Fibonacci
 
