@@ -16,4 +16,4 @@ Tener instalado el runtime de Java
 
 
 ## Integración Continua
-Se configuró Github Actions. Con cada push a Master se hace un build, se corren los tests (unitarios y de aceptación) y se hace un control estátido de código contra Sonar Cloud.
+Se configuró Github Actions. Con cada push a Master y Pull Request se hace un build, se corren los tests (unitarios y de aceptación) y se hace un control estátido de código contra Sonar Cloud.
